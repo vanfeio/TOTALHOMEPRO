@@ -1,0 +1,57 @@
+.footer {
+  background-color: var(--fern-frond);
+  width: 100%;
+}
+.footer .contents {
+  gap: 32px;
+  min-height: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 52.3px 0;
+}
+.footer .contents .flex {
+  display: flex;
+}
+.footer .contents .logo {
+  height: 61px;
+  width: 331px;
+}
+.footer .contents .logo a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.footer .contents .logo img {
+  height: 61px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 331px;
+}
+.footer .contents .links {
+  display: flex;
+  gap: 30px;
+  margin-top: auto;
+  margin-bottom: 5.41px;
+}
+.footer .contents .links .price, .footer .contents .links .faq, .footer .contents .links .worker, .footer .contents .links .company, .footer .contents .links .inquiry {
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.footer .contents .tel {
+  float: right;
+  height: 100%;
+  align-self: flex-end;
+  margin-left: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 271px;
+}
+.footer .contents .tel img {
+  align-self: flex-end;
+  height: 66px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 271px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,263 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url("https://px.animaapp.com/637f66ef6d3f0006faa5b150.637f66f002ba8d94b35e7524.MkSeTc7.hcp.png");
+
+@font-face {
+  font-family: "SourceHan Sans JP-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SourceHanSansJP-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "SourceHan Sans JP-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/.23591.otf") format("opentype");
+}
+@font-face {
+  font-family: "SourceHan Sans JP-Normal";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/.23596.otf") format("opentype");
+}
+@font-face {
+  font-family: "SourceHan Sans JP-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/.23594.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN2014-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/.32224.otf") format("opentype");
+}
+@font-face {
+  font-family: "DIN2014-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/.32231.otf") format("opentype");
+}
+@font-face {
+  font-family: "SourceHan Sans JP-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SourceHanSansJP-Regular.otf") format("opentype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated input {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.solve-your-problem {
+  flex: 1;
+  letter-spacing: 2.16px;
+  line-height: 65px;
+  margin-bottom: -3.5px;
+  margin-right: -2px;
+  margin-top: 1.5px;
+  white-space: nowrap;
+  width: 490px;
+}
+
+.comment_background {
+  background-color: var(--mercury);
+  height: 500px;
+  left: 0;
+  position: absolute;
+  top: 272px;
+  width: 882px;
+}
+
+.comment_line_border {
+  height: 1px;
+  left: 70px;
+  position: absolute;
+  top: 450px;
+  width: 726px;
+  background-color:var(--dove-gray);
+}
+
+.x3 {
+  background-color: var(--black-2);
+  border-radius: 8.5px;
+  height: 17px;
+  left: 1059px;
+  position: absolute;
+  top: 617px;
+  width: 17px;
+}
+
+.x4 {
+  background-color: var(--black-2);
+  border-radius: 8.5px;
+  height: 17px;
+  left: 1103px;
+  position: absolute;
+  top: 617px;
+  width: 17px;
+}
+
+.x7 {
+  background-color: var(--black);
+  border-radius: 8.5px;
+  height: 17px;
+  left: 1190px;
+  position: absolute;
+  top: 617px;
+  width: 17px;
+}
+
+.x5 {
+  background-color: var(--black-2);
+  border-radius: 8.5px;
+  height: 17px;
+  left: 1146px;
+  position: absolute;
+  top: 617px;
+  width: 17px;
+}
+
+.date {
+  height: 28px;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin-top: -8px;
+  white-space: nowrap;
+  width: 91px;
+}
+
+.x1545 {
+  display: flex;
+  height: 56px;
+  width: 300px;
+}
+
+.x787 {
+  height: 18px;
+  left: 71px;
+  object-fit: cover;
+  position: absolute;
+  top: 36px;
+  width: 14px;
+}
+
+.icon-call {
+  height: 26px;
+  object-fit: cover;
+  width: 27px;
+}
+
+.x54 {
+  background-color: var(--white);
+  height: 22px;
+  left: 97px;
+  position: absolute;
+  top: 1px;
+  width: 119px;
+}
+
+.phone {
+  left: 0;
+  letter-spacing: 1.60px;
+  line-height: 87px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.copyright {
+  letter-spacing: 0;
+  line-height: 28px;
+  min-height: 47px;
+  white-space: nowrap;
+}
+
+.flex {
+  align-items: flex-start;
+  display: flex;
+}
+
+.x1586 {
+  align-items: flex-start;
+  align-self: center;
+  background-color: var(--barley-corn);
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  margin-top: 36px;
+  min-width: 180px;
+  padding: 9.5px 23px;
+}
+
+.overlap-group6 {
+  align-items: flex-start;
+  background-color: var(--olivine);
+  border: 1px solid;
+  border-color: var(--dove-gray);
+  display: flex;
+  height: 70px;
+  min-width: 300px;
+  padding: 15.5px 19px;
+}
+
+
+/*
+
+*/
+.layout-1200 {
+  width:1200px;
+  margin:auto;
+}

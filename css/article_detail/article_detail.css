@@ -1,0 +1,110 @@
+/* screen - article_detail */
+.article_detail {
+  background-color: var(--white);
+  width: 100%;
+}
+
+.headline_construction {
+  align-self: flex-start;
+  letter-spacing: 0;
+  line-height: 65px;
+  margin-top: 208px;
+  min-height: 67px;
+  white-space: nowrap;
+}
+
+.article_detail .layout_desc {
+  align-items: flex-start;
+  background-color: var(--fern-frond);
+  display: flex;
+  height: 170px;
+  justify-content: flex-end;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.article_detail .text-desc {
+  letter-spacing: 0;
+  line-height: 36px;
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.article_detail .contents .text_label {
+  color: #777777;
+  font-family: var(--font-family-sourcehan_sans_jp-regular);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-top: 8px;
+  min-height: 51px;
+}
+.article_detail .contents .headline {
+  align-self: flex-start;
+  letter-spacing: 0;
+  line-height: 36px;
+  white-space: nowrap;
+  margin-top: 80px;
+}
+.article_detail .contents .headline.first {
+  margin-top: 58px;
+}
+.article_detail .contents .border {
+  width: 100%;
+  margin-top: 12px;
+  border-bottom: 1px solid var(--dove-gray);
+}
+.article_detail .contents .img {
+  height: 900px;
+  margin-top: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.article_detail .contents .text_label_desc {
+  color: var(--shark);
+  font-family: var(--font-family-sourcehan_sans_jp-regular);
+  font-size: var(--font-size-xxs);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-top: 17px;
+}
+
+.article_list {
+  margin-top: 285px;
+  margin-bottom: 160px;
+}
+.article_list .article_list_line {
+  align-items: flex-start;
+  display: flex;
+  gap: 30px;
+  min-width: 960px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.article_list .article_list_line.first {
+  margin-top: 0;
+}
+.article_list .article_list_line .article_item {
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid;
+  border-color: var(--dove-gray);
+  display: flex;
+  height: 70px;
+  min-width: 300px;
+}
+.article_list .article_list_line .article_item.selected {
+  background-color: var(--olivine);
+  color: var(--white);
+}
+.article_list .article_list_line .article_item .article_item_text {
+  letter-spacing: 0;
+  line-height: 42px;
+  min-height: 31px;
+  text-align: center;
+  white-space: nowrap;
+  margin: auto;
+}/*# sourceMappingURL=article_detail.css.map */
