@@ -52,16 +52,9 @@
 }
 
 .container-center-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
-
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .auto-animated div {
@@ -218,9 +211,10 @@
   white-space: nowrap;
 }
 
-.copyright {
+.copyright-c-2009 {
   letter-spacing: 0;
   line-height: 28px;
+  margin-left: 2.0px;
   min-height: 47px;
   white-space: nowrap;
 }
@@ -251,13 +245,4 @@
   height: 70px;
   min-width: 300px;
   padding: 15.5px 19px;
-}
-
-
-/*
-
-*/
-.layout-1200 {
-  width:1200px;
-  margin:auto;
 }

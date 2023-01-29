@@ -1,43 +1,55 @@
 /* screen - layout-contents */
 
+$breakpoint-sp: 768px;
+
 // BaseMain
 .layout-contents {
     align-items: flex-start;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    width: 1920px;
+    //width: 1920px;
+	overflow-x: hidden;
 }
 
 ///
 /// TopMain
 /// 
 .top_layout_type-1 {
-    margin-top: 152px;
-    width: 1920px;
+    margin-top: 120px;
+    width: 100%;
+    @media screen and (max-width: $breakpoint-sp) {
+        margin-top: 93px;
+    }
 }
 
 .top_layout_type-2 {
   margin-top: 116px;
-  width: 1920px;
+  width: 100%;
+    @media screen and (max-width: $breakpoint-sp) {
+        margin-top: 30px;
+    }
 }
 
 .layout-contents .text-syp {
-  display: flex;
-  height: 68px;
-  width: 490px;
+    .solve-your-problem {
+        width: auto;
+        height: auto;
+        line-height: 1;
+        @media screen and (max-width: $breakpoint-sp) {
+            font-size: 20px;
+        }
+    }
 }
 
 .layout-contents .overlap-layout {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-    min-height: 800px;
-    padding: 264px 160px;
+    padding: 264px 8vw;
     width: 100%;
     z-index: 21;
     position:relative;
+    @media screen and (max-width: $breakpoint-sp) {
+        padding: 80px 10px;
+    }
 }
 
 .layout-contents .background {
@@ -47,74 +59,33 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);    
   z-index:-1;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width: $breakpoint-sp) {
+        img {
+             height: 100%;
+        }
+    }
 }
 
-
-.layout-contents .overlap_text_lines-1 {
-  height: 164px;
-  position: relative;
-  width: 100％;
-}
-
-.layout-contents .overlap_text_lines-2 {
-  height: 93px;
-  margin-top: 34px;
-  position: relative;
-  width: 100％;
-}
-.layout-contents .overlap_text_lines-3 {
-  height: 95px;
-  margin-top: 34px;
-  position: relative;
-  width: 100％;
-}
-
-.layout-contents .overlap_text_lines-4 {
-  height: 95px;
-  margin-top: 34px;
-  position: relative;
-  width: 100％;
-}
-
-.layout-contents .overlap_text_line-background{
-  background-color: var(--white);
-  height: 88px;
-  left: 0;
-  position: absolute;
-  &.t_1_1{
-    top: 2px;
-    width: 566px;
-  }
-  &.t_1_2{
-    top: 68px;
-    width: 629px;
-  }
-  &.t_2_1{
-    top: 0;
-    width: 694px;
-  }
-  &.t_3_1{
-    top: 0;
-    width: 508px;
-  
-  }
-  &.t_4_1{
-    top: 0;
-    width: 869px;
-  }
-}
 
 
 .layout-contents .overlap_text_line-text {
-  left: 15px;
-  line-height: 75px;
-  position: absolute;
+  line-height: 1.4;
+    margin-bottom: 20px;
+    @media screen and (max-width: $breakpoint-sp) {
+        font-size: 20px;
+    }
   &.text_type_1{
     top: 0;
   }
   &.text_type_2{
     top: 6px;
   }
+    span {
+        background: #fff;
+        padding: 0 10px;
+    }
 }
 
 
@@ -126,57 +97,61 @@
 .layout-contents .intro_layout {
     height: 772px;
     position: relative;
-    width: 1567px;
+    width: 100%;
+    @media screen and (max-width: $breakpoint-sp) {
+        height: auto;
+    }
     &.intro-1 {
       margin-top: 303px;
+        @media screen and (max-width: $breakpoint-sp) {
+            margin-top: 50px;
+        }
     }
     &.intro-2 {
       margin-top: 68px;
+        @media screen and (max-width: $breakpoint-sp) {
+            margin-top: 50px;
+        }
     }
     
 }
 
 // 職人紹介設定
 .layout-contents .overlap-group {
-    //width: 1567px;
-    //height: 772px;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
+    height: 100%;
+  }
 
 
 // 職人紹介コメント
-.layout-contents .intro_layout .comment_layout {
-  left: 70px;
+.layout-contents .intro_layout .comment_layout{
+  background-color: var(--mercury);
+  height: 500px;
+  left: 0;
   position: absolute;
-  letter-spacing: 0;
+  top: 272px;
+  width: 882px;
+  padding:60px 155px 60px 70px;
+  white-space: nowrap;
+  .name {
+    margin-top:15px;
+  }
+  .line_border {
+    height: 1px;
+    width: 100%;
+    background-color:var(--dove-gray);
+    margin-top:10px;
+  }
   // 社長からの評価
-  &.title{
-    line-height: 42px;
-    top: 480px;
-  }
-  &.nowrap {
-    white-space: nowrap;
-  }
-  // 作業担当
-  &.work {
-    line-height: 42px;
-    top: 324px;
-    width: 471px;
-  }
-  // 名前
-  &.name {
-    line-height: 65px;
-    top: 380px;
+  .title{
+    //line-height: 42px;
+    margin-top: 32px;
   }
   // 評価内容
-  &.desc{
-    line-height: 42px;
-    top: 520px;
+  .desc{
+    margin-top:10px;
     width: 657px;
+    white-space: normal;
   }
-
 }
 
 // 職人画像
@@ -6587,7 +6562,7 @@
     width: auto;
   }
   
-  .web-1920-3 .copyright-C61RwL {
+  .web-1920-3 .copyright-c-2009-C61RwL {
     --z-index: 187;
     background-color: transparent;
     color: #ffffff;
@@ -13561,7 +13536,7 @@
     width: auto;
   }
   
-  .web-1920-4 .copyright-C61RwL {
+  .web-1920-4 .copyright-c-2009-C61RwL {
     --z-index: 187;
     background-color: transparent;
     color: #ffffff;
@@ -20536,7 +20511,7 @@
     width: auto;
   }
   
-  .web-1920-2 .copyright-C61RwL {
+  .web-1920-2 .copyright-c-2009-C61RwL {
     --z-index: 187;
     background-color: transparent;
     color: #ffffff;
@@ -27634,7 +27609,7 @@
     width: auto;
   }
   
-  .web-1920-1 .copyright-C61RwL {
+  .web-1920-1 .copyright-c-2009-C61RwL {
     --z-index: 191;
     background-color: transparent;
     color: #ffffff;
